@@ -1,0 +1,114 @@
+/* Body and General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(135deg, #ff6347, #ff4500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Reservation Container */
+.reservation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.reservation-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 1s ease-out;
+}
+
+.reservation-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #ff6347;
+    outline: none;
+}
+
+.input-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.btn-reserve {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reserve:hover {
+    background-color: #ff4500;
+}
+
+/* Keyframe for Fade-In Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reservation-box {
+        padding: 30px;
+    }
+    
+    .reservation-box h2 {
+        font-size: 1.5em;
+    }
+    
+    .btn-reserve {
+        font-size: 1em;
+    }
+}
