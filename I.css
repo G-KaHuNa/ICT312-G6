@@ -1,0 +1,183 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #34495e; /* Slightly lighter dark blue */
+    color: #ecf0f1;
+    padding: 20px;
+    transition: width 0.3s;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.6em; /* Increased heading size */
+    color: #ecf0f1;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    display: block;
+    padding: 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.sidebar ul li a.active, 
+.sidebar ul li a:hover {
+    background-color: #2980b9; 
+    transform: translateX(5px); 
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 240px; 
+    padding: 20px;
+    background-color: #ecf0f1; 
+    min-height: 100vh; 
+}
+
+/* Header Styles */
+header {
+    background-color: #27ae60; 
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 20px; 
+}
+
+/* Inventory Form Styles */
+.inventory-form {
+    background-color: #ffffff; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-form h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em; 
+    color: #2c3e50; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; 
+}
+
+.form-group input {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s; 
+}
+
+.form-group input:focus {
+    border-color: #27ae60; 
+    outline: none; 
+}
+
+/* Buttons */
+.add-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.add-btn:hover {
+    background-color: #219653; 
+}
+
+/* Inventory Table Styles */
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff; 
+    border-radius: 5px;
+    overflow: hidden; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.inventory-table th, .inventory-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.inventory-table th {
+    background-color: #f2f2f2;
+    font-weight: bold; 
+}
+
+/* Button Styles in Table */
+.edit-btn, .delete-btn {
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s; 
+}
+
+.edit-btn {
+    background-color: #f0ad4e; 
+}
+
+.delete-btn {
+    background-color: #d9534f; 
+}
+
+.edit-btn:hover {
+    background-color: #ec971f; 
+}
+
+.delete-btn:hover {
+    background-color: #c9302c; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 180px; 
+    }
+    .main-content {
+        margin-left: 200px; 
+    }
+}

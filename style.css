@@ -1,0 +1,10 @@
+body {
+	font-family: verdana, sans-serif;
+	color: #6e4716;
+	background-color: #f3f5b8;
+}
+
+input {
+	background-color: #dbc2a2;
+	padding: 0.2em 0.8em;
+}
